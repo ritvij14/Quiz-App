@@ -1,0 +1,144 @@
+This set of Probability and Statistics Multiple Choice Questions & Answers (MCQs) 
+
+1. A and B are two events such that P(A) = 0.4 and P(A ∩ B) = 0.2 Then P(A ∩ B) is equal to ___________
+a) 0.4
+b) 0.2
+c) 0.6
+d) 0.8
+Answer: a
+
+Explanation: P(A ∩ B) = P(A – (A ∩ B))
+= P(A) – P(A ∩ B)
+= 0.6 – 0.2 Using P(A) = 1 – P(A)
+= 0.4.
+
+
+2. A problem in mathematics is given to three students A, B and C. If the probability of A solving the problem is 1⁄2 and B not solving it is 1⁄4. The whole probability of the problem being solved is 63⁄64 then what is the probability of solving it?
+a) 1⁄8
+b) 1⁄64
+c) 7⁄8
+d) 1⁄2
+Answer: c
+
+
+Explanation:
+Let A be the event of A solving the problem
+Let B be the event of B solving the problem
+Let C be the event of C solving the problem
+Given P(a) = 1⁄2, P(~B) = 1⁄4 and P(A ∪ B ∪ C) = 63/64
+We know P(A ∪ B ∪ C) = 1 – P(A ∪ B ∪ C)
+
+= 1 – P(A ∩ B ∩ C)
+
+= 1 – P(A) P(B) P(C)
+
+advertisement
+
+Let P(C) = p
+ie 63⁄64 = 1 – (1⁄2)(1⁄4)(p)
+
+= 1 – p⁄8
+⇒ P =1/8 = P(C)
+⇒P(C) = 1 – P = 1 – 1⁄8 = 7⁄8.
+
+
+
+3. Let A and B be two events such that P(A) = 1⁄5 While P(A or B) = 1⁄2. Let P(B) = P. For what values of P are A and B independent?
+a) 1⁄10 and 3⁄10
+b) 3⁄10 and 4⁄5
+c) 3⁄8 only
+d) 3⁄10
+Answer: c
+
+Explanation: For independent events,
+P(A ∩ B) = P(A) P(B)
+P(A ∪ B) = P(A) + P(B) – P(A ∩ B)
+= P(A) + P(B) – P(A) P(B)
+= 1⁄5 + P (1⁄5)P
+⇒ 1⁄2 = 1⁄5 + 4⁄5P
+⇒ P= 3⁄8.
+
+
+4. If A and B are two mutually exclusive events with P(~A) = 5⁄6 and P(b) = 1⁄3 then P(A /~B) is equal to ___________
+a) 1⁄4
+b) 1⁄2
+c) 0, since mutually exclusive
+d) 5⁄18
+Answer: a
+
+
+Explanation: As A and B are mutually exclusive we have
+A∩B¯
+And Hence
+P(A/B¯)=P(A∩B¯)P(B¯)
+1−P(A¯)1−P(B¯)=1−561−13
+P(A/B¯)=14
+
+
+5. If A and B are two events such that P(a) = 0.2, P(b) = 0.6 and P(A /B) = 0.2 then the value of P(A /~B) is ___________
+a) 0.2
+b) 0.5
+c) 0.8
+d) 1⁄3
+Answer: a
+
+
+Explanation: For independent events,
+P(A /~B) = P(a) = 0.2.
+6. If A and B are two mutually exclusive events with P(a) > 0 and P(b) > 0 then it implies they are also independent.
+a) True
+b) False
+Answer: b
+
+
+Explanation: P(A ∩ B) = 0 as (A ∩ B) = ∅
+But P(A ∩ B) ≠ 0 , as P(a) > 0 and P(b) > 0
+P(A ∩ B) = P(A) P(B), for independent events.
+
+
+7. Let A and B be two events such that the occurrence of A implies occurrence of B, But not vice-versa, then the correct relation between P(a) and P(b) is?
+a) P(A) < P(B)
+b) P(B) ≥ P(A)
+c) P(A) = P(B)
+d) P(A) ≥ P(B)
+Answer: b
+
+
+Explanation: Here, according to the given statement A ⊆ B
+P(B) = P(A ∪ (A ∩ B)) (∵ A ∩ B = A)
+= P(A) + P(A ∩ B)
+Therefore, P(B) ≥ P(A)
+
+
+8. In a sample space S, if P(a) = 0, then A is independent of any other event.
+a) True
+b) False
+Answer: a
+
+
+Explanation: P(a) = 0 (impossible event)
+Hence, A is not dependent on any other event.
+
+
+9. If A ⊂ B and B ⊂ A then,
+a) P(A) > P(B)
+b) P(A) < P(B)
+c) P(A) = P(B)
+d) P(A) < P(B)
+Answer: c
+
+
+Explanation: A ⊂ B and B ⊂ A => A = B
+Hence P(a) = P(b).
+
+
+10. If A ⊂ B then?
+a) P(a) > P(b)
+b) P(A) ≥ P(B)
+c) P(B) = P(A)
+d) P(B) = P(B)
+
+
+Answer: b
+Explanation: A ⊂ B => B ⊂ A
+Therefore, P(A) ≥ P(B)
