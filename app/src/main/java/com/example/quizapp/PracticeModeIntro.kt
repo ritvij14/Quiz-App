@@ -13,9 +13,9 @@ class PracticeModeIntro : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(mainBinding.root)
 
-        mainBinding.btnStartPractice.setOnClickListener{
+        /*mainBinding.btnStartPractice.setOnClickListener{
             val intent = Intent(this ,FirstQuestion::class.java)
             startActivity(intent)
-        }
+        }*/
     }
 }
