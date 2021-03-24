@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8ED90"
+    android:backgroundTint="#E8D08A">
+
+    <TextView
+        android:id="@+id/ques"
+        android:layout_width="354dp"
+        android:layout_height="157dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="257dp"
+        android:background="#E1DFDF"
+        android:backgroundTint="#A9E6E5E3"
+        android:elevation="25dp"
+        android:text="quesgoeshere"
+        android:textSize="25sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <Button
+        android:id="@+id/prevbtn"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#FF9800"
+        android:text="prev" />
+
+    <Button
+        android:id="@+id/nxtbtn"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#FF9800"
+        android:text="NEXT" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="57dp"
+        android:layout_height="59dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#FFC107"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/light_bulb"/>
+
+    <TextView
+        android:id="@+id/protip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="Pro tip: Don't waste much time on a single question" />
+
+
+</RelativeLayout>
