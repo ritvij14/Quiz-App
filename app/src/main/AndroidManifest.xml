@@ -9,24 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.QuizApp">
-        <activity android:name=".PracticeModeIntro"></activity>
-        <activity android:name=".TenthQuestion" />
-        <activity android:name=".NinthQuestion" />
         <activity
-            android:name=".EigthQuestion"
-            android:label="@string/title_activity_eigth_question"
-            android:theme="@style/Theme.QuizApp.NoActionBar" />
-        <activity
-            android:name=".SeventhQuestion"
-            android:label="@string/title_activity_seventh_question"
-            android:theme="@style/Theme.QuizApp.NoActionBar" />
-        <activity android:name=".SixthQuestion" />
-        <activity android:name=".FifthQuestion" />
-        <activity android:name=".FourthQuestion" />
-        <activity android:name=".ThirdQuestion" />
-        <activity android:name=".SecondActivity" />
-        <activity android:name=".SecondQuestion" />
-        <activity android:name=".FirstQuestion" />
+            android:name=".Practice"
+            android:label="@string/title_activity_practice"
+            android:theme="@style/Theme.QuizApp.NoActionBar"></activity>
+
+        <activity android:name=".PracticeModeIntro" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

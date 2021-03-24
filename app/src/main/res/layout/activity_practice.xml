@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16sp"
+    android:scrollbarSize="25sp"
+    tools:context=".MainActivity">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Practice"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvQuestionNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 1"
+            android:textSize="35sp"
+            android:layout_margin="10sp"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text= "A and B are two events such that P(A) = 0.4 and P(A ∩ B) = 0.2 Then P(A ∩ B) is equal to ___________"
+            android:textSize="30sp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/btnOptionA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="a) 0.4"
+            android:textColor="@color/black"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textSize="30sp"/>
+        <Button
+            android:id="@+id/btnOptionB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="b) 0.2"
+            android:textColor="@color/black"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textSize="30sp"/>
+        <Button
+            android:id="@+id/btnOptionC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="c) 0.6"
+            android:textColor="@color/black"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textSize="30sp"/>
+        <Button
+            android:id="@+id/btnOptionD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="d) 0.8"
+            android:textColor="@color/black"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textSize="30dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10sp">
+            <Button
+                android:id="@+id/btnPrevious"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Previous"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:textSize="25sp"/>
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:textSize="25sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

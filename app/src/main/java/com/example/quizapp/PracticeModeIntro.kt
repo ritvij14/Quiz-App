@@ -3,6 +3,7 @@ package com.example.quizapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.SyncStateContract
 import com.example.quizapp.databinding.ActivityMainBinding
 import com.example.quizapp.databinding.ActivityPracticeModeIntroBinding
 
@@ -13,9 +14,9 @@ class PracticeModeIntro : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(mainBinding.root)
 
-        /*mainBinding.btnStartPractice.setOnClickListener{
-            val intent = Intent(this ,FirstQuestion::class.java)
-            startActivity(intent)
-        }*/
+        mainBinding.btnStartPractice.setOnClickListener{
+            val intent = Intent(this ,Practice::class.java)
+            startActivity(intent)}
+
     }
 }
