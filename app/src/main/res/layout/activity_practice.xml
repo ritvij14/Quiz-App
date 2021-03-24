@@ -84,11 +84,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="Previous"
+                android:text="Prev"
                 android:textColor="@color/white"
                 android:backgroundTint="@color/orange"
                 android:layout_weight="1"
-                android:layout_marginEnd="10dp"
+                android:layout_marginEnd="15dp"
                 android:textSize="25sp"/>
             <Button
                 android:id="@+id/btnNext"
@@ -98,7 +98,7 @@
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:backgroundTint="@color/orange"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="0dp"
                 android:layout_marginTop="30dp"
                 android:textSize="25sp"/>
         </LinearLayout>

@@ -1,6 +1,7 @@
 package com.example.quizapp
 
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.quizapp.databinding.ActivityPracticeBinding
@@ -12,14 +13,28 @@ fun onBackPressed() {
 var quesNum = 1
 class Practice : AppCompatActivity() {
     private lateinit var mainBinding: ActivityPracticeBinding
+    fun checkOption(num : Int)
+    {
+        if (num == 6 || num == 8)
+        {
+            mainBinding.btnOptionC.visibility = View.GONE
+            mainBinding.btnOptionD.visibility = View.GONE
+        }
+        else
+        {
+            mainBinding.btnOptionC.visibility = View.VISIBLE
+            mainBinding.btnOptionD.visibility = View.VISIBLE
+        }
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         mainBinding = ActivityPracticeBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(mainBinding.root)
 
-        mainBinding.btnNext.setOnClickListener{
+        mainBinding.btnNext.setOnClickListener {
             quesNum += 1
-            when(quesNum){
+            checkOption(quesNum)
+            when (quesNum) {
                 1 -> {
                     mainBinding.tvQuestionNumber.text = "Question 1"
                     mainBinding.tvQuestion.text = Constants.Question1
@@ -101,8 +116,12 @@ class Practice : AppCompatActivity() {
                     mainBinding.btnOptionD.text = Constants.Q10O4
                 }
             }
+        }
         mainBinding.btnPrevious.setOnClickListener{
-            quesNum -= 1
+            if(quesNum>1) {
+                quesNum-= 1
+            }
+            checkOption(quesNum)
             when(quesNum){
                 1 -> {
                     mainBinding.tvQuestionNumber.text = "Question 1"
@@ -183,7 +202,6 @@ class Practice : AppCompatActivity() {
                     mainBinding.btnOptionB.text = Constants.Q10O2
                     mainBinding.btnOptionC.text = Constants.Q10O3
                     mainBinding.btnOptionD.text = Constants.Q10O4
-                }
                 }
             }
         }
