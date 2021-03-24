@@ -10,12 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QuizApp">
         <activity
+            android:name=".Result"
+            android:label="@string/title_activity_result"
+            android:theme="@style/Theme.QuizApp.NoActionBar"></activity>
+        <activity
             android:name=".Practice"
             android:label="@string/title_activity_practice"
-            android:theme="@style/Theme.QuizApp.NoActionBar"></activity>
-
+            android:theme="@style/Theme.QuizApp.NoActionBar" />
         <activity android:name=".PracticeModeIntro" />
-
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

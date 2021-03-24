@@ -14,4 +14,5 @@
     <string name="title_activity_eigth_question">EigthQuestion</string>
     <string name="title_activity_practice_mode_questions">PracticeModeQuestions</string>
     <string name="title_activity_practice">Practice</string>
+    <string name="title_activity_result">Result</string>
 </resources>
