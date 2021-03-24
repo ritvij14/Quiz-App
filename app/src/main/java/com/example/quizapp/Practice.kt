@@ -56,6 +56,7 @@ class Practice : AppCompatActivity() {
                     mainBinding.btnOptionB.text = "1/64"
                     mainBinding.btnOptionC.text = "7/8"
                     mainBinding.btnOptionC.text = "1/2"
+
                 }
             }
 
