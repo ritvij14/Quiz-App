@@ -22,48 +22,170 @@ class Practice : AppCompatActivity() {
             when(quesNum){
                 1 -> {
                     mainBinding.tvQuestionNumber.text = "Question 1"
-                    mainBinding.tvQuestion.text = "A and B are two events such that P(A) = 0.4 and P(A ∩ B) = 0.2 Then P(A ∩ B) is equal to ___________"
-                    mainBinding.btnOptionA.text = "0.4"
-                    mainBinding.btnOptionB.text = "0.2"
-                    mainBinding.btnOptionC.text = "0.6"
-                    mainBinding.btnOptionC.text = "0.8"
+                    mainBinding.tvQuestion.text = Constants.Question1
+                    mainBinding.btnOptionA.text = Constants.Q1O1
+                    mainBinding.btnOptionB.text = Constants.Q1O2
+                    mainBinding.btnOptionC.text = Constants.Q1O3
+                    mainBinding.btnOptionD.text = Constants.Q1O4
                 }
                 2 -> {
                     mainBinding.tvQuestionNumber.text = "Question 2"
-                    mainBinding.tvQuestion.text = "A problem in mathematics is given to three students A, B and C. If the probability of A solving the problem is 1⁄2 and B not solving it is 1⁄4. The whole probability of the problem being solved is 63⁄64 then what is the probability of solving it?"
-                    mainBinding.btnOptionA.text = "1/8"
-                    mainBinding.btnOptionB.text = "1/64"
-                    mainBinding.btnOptionC.text = "7/8"
-                    mainBinding.btnOptionC.text = "1/2"
+                    mainBinding.tvQuestion.text = Constants.Question2
+                    mainBinding.btnOptionA.text = Constants.Q2O1
+                    mainBinding.btnOptionB.text = Constants.Q2O2
+                    mainBinding.btnOptionC.text = Constants.Q2O3
+                    mainBinding.btnOptionD.text = Constants.Q2O4
                 }
-
+                3 -> {
+                    mainBinding.tvQuestionNumber.text = "Question 3"
+                    mainBinding.tvQuestion.text = Constants.Question3
+                    mainBinding.btnOptionA.text = Constants.Q3O1
+                    mainBinding.btnOptionB.text = Constants.Q3O2
+                    mainBinding.btnOptionC.text = Constants.Q3O3
+                    mainBinding.btnOptionD.text = Constants.Q3O4
+                }
+                4 -> {
+                    mainBinding.tvQuestionNumber.text = "Question 4"
+                    mainBinding.tvQuestion.text = Constants.Question4
+                    mainBinding.btnOptionA.text = Constants.Q4O1
+                    mainBinding.btnOptionB.text = Constants.Q4O2
+                    mainBinding.btnOptionC.text = Constants.Q4O3
+                    mainBinding.btnOptionD.text = Constants.Q4O4
+                }
+                5 -> {
+                    mainBinding.tvQuestionNumber.text = "Question 5"
+                    mainBinding.tvQuestion.text = Constants.Question5
+                    mainBinding.btnOptionA.text = Constants.Q5O1
+                    mainBinding.btnOptionB.text = Constants.Q5O2
+                    mainBinding.btnOptionC.text = Constants.Q5O3
+                    mainBinding.btnOptionD.text = Constants.Q5O4
+                }
+                6 -> {
+                    mainBinding.tvQuestionNumber.text = "Question 6"
+                    mainBinding.tvQuestion.text = Constants.Question6
+                    mainBinding.btnOptionA.text = Constants.Q6O1
+                    mainBinding.btnOptionB.text = Constants.Q6O2
+                    mainBinding.btnOptionC.text = ""
+                    mainBinding.btnOptionD.text = ""
+                }
+                7 -> {
+                    mainBinding.tvQuestionNumber.text = "Question 7"
+                    mainBinding.tvQuestion.text = Constants.Question7
+                    mainBinding.btnOptionA.text = Constants.Q7O1
+                    mainBinding.btnOptionB.text = Constants.Q7O2
+                    mainBinding.btnOptionC.text = Constants.Q7O3
+                    mainBinding.btnOptionD.text = Constants.Q7O4
+                }
+                8 -> {
+                    mainBinding.tvQuestionNumber.text = "Question 8"
+                    mainBinding.tvQuestion.text = Constants.Question8
+                    mainBinding.btnOptionA.text = Constants.Q8O1
+                    mainBinding.btnOptionB.text = Constants.Q8O2
+                    mainBinding.btnOptionC.text = ""
+                    mainBinding.btnOptionD.text = ""
+                }
+                9 -> {
+                    mainBinding.tvQuestionNumber.text = "Question 9"
+                    mainBinding.tvQuestion.text = Constants.Question9
+                    mainBinding.btnOptionA.text = Constants.Q9O1
+                    mainBinding.btnOptionB.text = Constants.Q9O2
+                    mainBinding.btnOptionC.text = Constants.Q9O3
+                    mainBinding.btnOptionD.text = Constants.Q9O4
+                }
+                10 -> {
+                    mainBinding.tvQuestionNumber.text = "Question 10"
+                    mainBinding.tvQuestion.text = Constants.Question10
+                    mainBinding.btnOptionA.text = Constants.Q10O1
+                    mainBinding.btnOptionB.text = Constants.Q10O2
+                    mainBinding.btnOptionC.text = Constants.Q10O3
+                    mainBinding.btnOptionD.text = Constants.Q10O4
+                }
             }
         mainBinding.btnPrevious.setOnClickListener{
             quesNum -= 1
             when(quesNum){
                 1 -> {
                     mainBinding.tvQuestionNumber.text = "Question 1"
-                    mainBinding.tvQuestion.text = "A and B are two events such that P(A) = 0.4 and P(A ∩ B) = 0.2 Then P(A ∩ B) is equal to ___________"
-                    mainBinding.btnOptionA.text = "0.4"
-                    mainBinding.btnOptionB.text = "0.2"
-                    mainBinding.btnOptionC.text = "0.6"
-                    mainBinding.btnOptionC.text = "0.8"
+                    mainBinding.tvQuestion.text = Constants.Question1
+                    mainBinding.btnOptionA.text = Constants.Q1O1
+                    mainBinding.btnOptionB.text = Constants.Q1O2
+                    mainBinding.btnOptionC.text = Constants.Q1O3
+                    mainBinding.btnOptionD.text = Constants.Q1O4
                 }
                 2 -> {
                     mainBinding.tvQuestionNumber.text = "Question 2"
-                    mainBinding.tvQuestion.text = "A problem in mathematics is given to three students A, B and C. If the probability of A solving the problem is 1⁄2 and B not solving it is 1⁄4. The whole probability of the problem being solved is 63⁄64 then what is the probability of solving it?"
-                    mainBinding.btnOptionA.text = "1/8"
-                    mainBinding.btnOptionB.text = "1/64"
-                    mainBinding.btnOptionC.text = "7/8"
-                    mainBinding.btnOptionC.text = "1/2"
-
+                    mainBinding.tvQuestion.text = Constants.Question2
+                    mainBinding.btnOptionA.text = Constants.Q2O1
+                    mainBinding.btnOptionB.text = Constants.Q2O2
+                    mainBinding.btnOptionC.text = Constants.Q2O3
+                    mainBinding.btnOptionD.text = Constants.Q2O4
+                }
+                3 -> {
+                    mainBinding.tvQuestionNumber.text = "Question 3"
+                    mainBinding.tvQuestion.text = Constants.Question3
+                    mainBinding.btnOptionA.text = Constants.Q3O1
+                    mainBinding.btnOptionB.text = Constants.Q3O2
+                    mainBinding.btnOptionC.text = Constants.Q3O3
+                    mainBinding.btnOptionD.text = Constants.Q3O4
+                }
+                4 -> {
+                    mainBinding.tvQuestionNumber.text = "Question 4"
+                    mainBinding.tvQuestion.text = Constants.Question4
+                    mainBinding.btnOptionA.text = Constants.Q4O1
+                    mainBinding.btnOptionB.text = Constants.Q4O2
+                    mainBinding.btnOptionC.text = Constants.Q4O3
+                    mainBinding.btnOptionD.text = Constants.Q4O4
+                }
+                5 -> {
+                    mainBinding.tvQuestionNumber.text = "Question 5"
+                    mainBinding.tvQuestion.text = Constants.Question5
+                    mainBinding.btnOptionA.text = Constants.Q5O1
+                    mainBinding.btnOptionB.text = Constants.Q5O2
+                    mainBinding.btnOptionC.text = Constants.Q5O3
+                    mainBinding.btnOptionD.text = Constants.Q5O4
+                }
+                6 -> {
+                    mainBinding.tvQuestionNumber.text = "Question 6"
+                    mainBinding.tvQuestion.text = Constants.Question6
+                    mainBinding.btnOptionA.text = Constants.Q6O1
+                    mainBinding.btnOptionB.text = Constants.Q6O2
+                    mainBinding.btnOptionC.text = ""
+                    mainBinding.btnOptionD.text = ""
+                }
+                7 -> {
+                    mainBinding.tvQuestionNumber.text = "Question 7"
+                    mainBinding.tvQuestion.text = Constants.Question7
+                    mainBinding.btnOptionA.text = Constants.Q7O1
+                    mainBinding.btnOptionB.text = Constants.Q7O2
+                    mainBinding.btnOptionC.text = Constants.Q7O3
+                    mainBinding.btnOptionD.text = Constants.Q7O4
+                }
+                8 -> {
+                    mainBinding.tvQuestionNumber.text = "Question 8"
+                    mainBinding.tvQuestion.text = Constants.Question8
+                    mainBinding.btnOptionA.text = Constants.Q8O1
+                    mainBinding.btnOptionB.text = Constants.Q8O2
+                    mainBinding.btnOptionC.text = ""
+                    mainBinding.btnOptionD.text = ""
+                }
+                9 -> {
+                    mainBinding.tvQuestionNumber.text = "Question 9"
+                    mainBinding.tvQuestion.text = Constants.Question9
+                    mainBinding.btnOptionA.text = Constants.Q9O1
+                    mainBinding.btnOptionB.text = Constants.Q9O2
+                    mainBinding.btnOptionC.text = Constants.Q9O3
+                    mainBinding.btnOptionD.text = Constants.Q9O4
+                }
+                10 -> {
+                    mainBinding.tvQuestionNumber.text = "Question 10"
+                    mainBinding.tvQuestion.text = Constants.Question10
+                    mainBinding.btnOptionA.text = Constants.Q10O1
+                    mainBinding.btnOptionB.text = Constants.Q10O2
+                    mainBinding.btnOptionC.text = Constants.Q10O3
+                    mainBinding.btnOptionD.text = Constants.Q10O4
+                }
                 }
             }
-
-            }
         }
-
-
-
     }
 }
