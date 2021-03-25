@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.SharedPreferences
 import android.graphics.Color
 import android.os.Bundle
+import android.view.View
 import android.preference.Preference
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -19,6 +20,19 @@ var ans = "None"
 
 class Practice : AppCompatActivity() {
     private lateinit var mainBinding: ActivityPracticeBinding
+    fun checkOption(num : Int)
+    {
+        if (num == 6 || num == 8)
+        {
+            mainBinding.btnOptionC.visibility = View.GONE
+            mainBinding.btnOptionD.visibility = View.GONE
+        }
+        else
+        {
+            mainBinding.btnOptionC.visibility = View.VISIBLE
+            mainBinding.btnOptionD.visibility = View.VISIBLE
+        }
+    }
 
 
 
