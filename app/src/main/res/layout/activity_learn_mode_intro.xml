@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PracticeModeIntro"
+    tools:context=".LearnModeIntro"
     android:orientation="vertical"
     android:background="@drawable/practice_intro_bg">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:text="@string/practice_mode"
+        android:text="@string/learn_mode"
         android:textStyle="bold"
         android:textSize="50sp"
         android:gravity="center"
@@ -18,9 +18,9 @@
         android:layout_marginTop="30dp"
         android:background="@color/cream3"/>
     <ImageView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="200sp"
-        android:src="@drawable/practice_mode_intro"/>
+        android:src="@drawable/learn_mode_intro2"/>
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -65,7 +65,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/fif"
+            android:text="@string/hun"
             android:textSize="20sp"/>
     </GridLayout>
     <Button

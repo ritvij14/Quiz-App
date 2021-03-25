@@ -9,14 +9,14 @@
     <TextView
         android:id="@+id/ques"
         android:layout_width="354dp"
-        android:layout_height="157dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="257dp"
         android:background="#E1DFDF"
         android:backgroundTint="#A9E6E5E3"
         android:elevation="25dp"
-        android:text="quesgoeshere"
+        android:text=" "
         android:textSize="25sp"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
