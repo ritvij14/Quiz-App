@@ -17,6 +17,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this ,PracticeModeIntro::class.java)
             startActivity(intent)
         }
+        mainBinding.btnLearn.setOnClickListener{
+            val intent = Intent(this ,LearnMode::class.java)
+            startActivity(intent)
+        }
 
 
     }

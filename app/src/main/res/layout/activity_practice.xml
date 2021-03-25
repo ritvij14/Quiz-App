@@ -30,50 +30,62 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text= "A and B are two events such that P(A) = 0.4 and P(A ∩ B) = 0.2 Then P(A ∩ B) is equal to ___________"
+            android:text= "Display question"
             android:textSize="25sp"
             android:textAlignment="textStart"
             android:textColor="@color/black"/>
-        <Button
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/optnRadioGrp">
+
+
+        <RadioButton
             android:id="@+id/btnOptionA"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="a) 0.4"
+            android:text="Display optn A"
             android:textColor="@color/black"
             android:textAlignment="textStart"
             android:textAllCaps="false"
+            android:background="@color/white"
             android:textSize="25sp"/>
-        <Button
+        <RadioButton
             android:id="@+id/btnOptionB"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="b) 0.2"
+            android:text="Display optn B"
             android:textColor="@color/black"
             android:textAlignment="textStart"
             android:textAllCaps="false"
-            android:textSize="25sp"/>
-        <Button
+            android:textSize="25sp"
+            android:background="@color/white"
+            />
+        <RadioButton
             android:id="@+id/btnOptionC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="c) 0.6"
+            android:text="Display optn C"
             android:textColor="@color/black"
             android:textAlignment="textStart"
             android:textAllCaps="false"
-            android:textSize="25sp"/>
-        <Button
+            android:textSize="25sp"
+            android:background="@color/white"/>
+        <RadioButton
             android:id="@+id/btnOptionD"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="d) 0.8"
+            android:text="Display optn D"
             android:textColor="@color/black"
             android:textAlignment="textStart"
             android:textAllCaps="false"
-            android:textSize="25sp"/>
+            android:textSize="25sp"
+            android:background="@color/white"/>
+        </RadioGroup>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -14,5 +14,6 @@
     <color name="cream3">#F8D97A</color>
     <color name="brown">#B58135</color>
     <color name="dark_brown">#8F672C</color>
-    <color name="Highlight_optn_yellow">#D89D47</color>
+    <color name="red">#F44336</color>
+    <color name="green">#A2EC4E</color>
 </resources>

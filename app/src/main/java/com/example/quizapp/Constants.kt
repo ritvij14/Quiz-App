@@ -1,13 +1,14 @@
 package com.example.quizapp
 object Constants {
+
     // Question repository
     const val Question1 = "1. A and B are two events such that P(A) = 0.4 and P(A ∩ B) = 0.2 Then P(A ∩ B) is equal to ___________\n"
-    const val Q1O1 = "a) 0.4\n"
-    const val Q1O2 = "b) 0.2\n"
-    const val Q1O3 = "c) 0.6\n"
+    const val Q1O1 = "a) 0.4"
+    const val Q1O2 = "b) 0.2"
+    const val Q1O3 = "c) 0.6"
     const val Q1O4 = "d) 0.8"
     const val Question2 = "2. A problem in mathematics is given to three students A, B and C. If the probability of A solving the problem is 1⁄2 and B not solving it is 1⁄4. The whole probability of the problem being solved is 63⁄64 then what is the probability of solving it?\n"
-    const val Q2O1 = "a) 1⁄8\n"
+    const val Q2O1 = "a) 1⁄8"
     const val Q2O2 = "b) 1⁄64\n"
     const val Q2O3 = "c) 7⁄8\n"
     const val Q2O4 = "d) 1⁄2"
