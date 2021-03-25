@@ -15,6 +15,7 @@
             android:theme="@style/Theme.QuizApp.NoActionBar"></activity>
 
         <activity android:name=".PracticeModeIntro" />
+        <activity android:name=".LearnModeIntro"/>
 
         <activity android:name=".MainActivity">
             <intent-filter>
