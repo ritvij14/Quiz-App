@@ -12,7 +12,7 @@
 
         <activity
             android:name=".Result"
-            android:label="@string/title_activity_result"
+            android:label="Result"
             android:theme="@style/Theme.QuizApp.NoActionBar" />
         <activity
             android:name=".Practice"

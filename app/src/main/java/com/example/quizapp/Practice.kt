@@ -12,6 +12,8 @@ import android.preference.Preference
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.quizapp.databinding.ActivityPracticeBinding
+import java.text.DecimalFormat
+import java.text.NumberFormat
 import java.util.prefs.Preferences
 
 abstract class CountDownTimer
@@ -32,18 +34,22 @@ class Practice : AppCompatActivity() {
             mainBinding.btnOptionD.visibility = View.VISIBLE
         }
     }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         mainBinding = ActivityPracticeBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(mainBinding.root)
         val timer: TextView = findViewById(R.id.clock)
         object : CountDownTimer(3000000, 1000) {
+            val f: NumberFormat = DecimalFormat("00")
             override fun onTick(millisUntilFinished: Long) {
-                timer.setText("Time left: " + millisUntilFinished / 60000 + ":"+(millisUntilFinished/1000)%60)
+                timer.setText("Time left: " + millisUntilFinished / 60000 + ":" + f.format((millisUntilFinished / 1000) % 60))
             }
 
             override fun onFinish() {
                 timer.setText("done!")
+
+
             }
         }.start()
 
@@ -53,8 +59,8 @@ class Practice : AppCompatActivity() {
         var quesNum = 1
         var ans = "None"
 
-        fun screenContent(num : Int) {
-            mainBinding.btnNext.text="Next"
+        fun screenContent(num: Int) {
+            mainBinding.btnNext.text = "Next"
             when (num) {
                 1 -> {
                     mainBinding.tvQuestionNumber.text = "Question 1"
@@ -269,16 +275,16 @@ class Practice : AppCompatActivity() {
                             apply()
                         }
                     }
-                    val intent = Intent(this ,Result::class.java)
+                    val intent = Intent(this, Result::class.java)
                     startActivity(intent)
                 }
 
             }
         }
 
-    mainBinding.btnOptionA.setOnClickListener {
+        mainBinding.btnOptionA.setOnClickListener {
             ans = "A"
-            when(quesNum){
+            when (quesNum) {
                 1 -> mainBinding.btnShortCut1.setBackgroundColor(Color.YELLOW)
                 2 -> mainBinding.btnShortCut2.setBackgroundColor(Color.YELLOW)
                 3 -> mainBinding.btnShortCut3.setBackgroundColor(Color.YELLOW)
@@ -293,7 +299,7 @@ class Practice : AppCompatActivity() {
         }
         mainBinding.btnOptionB.setOnClickListener {
             ans = "B"
-            when(quesNum){
+            when (quesNum) {
                 1 -> mainBinding.btnShortCut1.setBackgroundColor(Color.YELLOW)
                 2 -> mainBinding.btnShortCut2.setBackgroundColor(Color.YELLOW)
                 3 -> mainBinding.btnShortCut3.setBackgroundColor(Color.YELLOW)
@@ -308,7 +314,7 @@ class Practice : AppCompatActivity() {
         }
         mainBinding.btnOptionC.setOnClickListener {
             ans = "C"
-            when(quesNum){
+            when (quesNum) {
                 1 -> mainBinding.btnShortCut1.setBackgroundColor(Color.YELLOW)
                 2 -> mainBinding.btnShortCut2.setBackgroundColor(Color.YELLOW)
                 3 -> mainBinding.btnShortCut3.setBackgroundColor(Color.YELLOW)
@@ -323,7 +329,7 @@ class Practice : AppCompatActivity() {
         }
         mainBinding.btnOptionD.setOnClickListener {
             ans = "D"
-            when(quesNum){
+            when (quesNum) {
                 1 -> mainBinding.btnShortCut1.setBackgroundColor(Color.YELLOW)
                 2 -> mainBinding.btnShortCut2.setBackgroundColor(Color.YELLOW)
                 3 -> mainBinding.btnShortCut3.setBackgroundColor(Color.YELLOW)
@@ -348,81 +354,84 @@ class Practice : AppCompatActivity() {
             if (quesNum <= 11) {
                 quesNum += 1
                 checkOption(quesNum)
-                screenContent(quesNum)}
-        mainBinding.btnPrevious.setOnClickListener {
-            if (quesNum <= 11) {
-                quesNum -= 1
-                checkOption(quesNum)
                 screenContent(quesNum)
             }
-        }
-
-
-            }
-            mainBinding.btnMarkForReview.setOnClickListener {
-                when (quesNum) {
-                    1 -> mainBinding.btnShortCut1.setBackgroundColor(Color.CYAN)
-                    2 -> mainBinding.btnShortCut2.setBackgroundColor(Color.CYAN)
-                    3 -> mainBinding.btnShortCut3.setBackgroundColor(Color.CYAN)
-                    4 -> mainBinding.btnShortCut4.setBackgroundColor(Color.CYAN)
-                    5 -> mainBinding.btnShortCut5.setBackgroundColor(Color.CYAN)
-                    6 -> mainBinding.btnShortCut6.setBackgroundColor(Color.CYAN)
-                    7 -> mainBinding.btnShortCut7.setBackgroundColor(Color.CYAN)
-                    8 -> mainBinding.btnShortCut8.setBackgroundColor(Color.CYAN)
-                    9 -> mainBinding.btnShortCut9.setBackgroundColor(Color.CYAN)
-                    10 -> mainBinding.btnShortCut10.setBackgroundColor(Color.CYAN)
+            mainBinding.btnPrevious.setOnClickListener {
+                if (quesNum <= 11) {
+                    quesNum -= 1
+                    checkOption(quesNum)
+                    screenContent(quesNum)
                 }
             }
-            mainBinding.btnShortCut1.setOnClickListener {
-                quesNum = 1
-                checkOption(quesNum)
-                screenContent(quesNum)
+
+
+        }
+        mainBinding.btnMarkForReview.setOnClickListener {
+            when (quesNum) {
+                1 -> mainBinding.btnShortCut1.setBackgroundColor(Color.CYAN)
+                2 -> mainBinding.btnShortCut2.setBackgroundColor(Color.CYAN)
+                3 -> mainBinding.btnShortCut3.setBackgroundColor(Color.CYAN)
+                4 -> mainBinding.btnShortCut4.setBackgroundColor(Color.CYAN)
+                5 -> mainBinding.btnShortCut5.setBackgroundColor(Color.CYAN)
+                6 -> mainBinding.btnShortCut6.setBackgroundColor(Color.CYAN)
+                7 -> mainBinding.btnShortCut7.setBackgroundColor(Color.CYAN)
+                8 -> mainBinding.btnShortCut8.setBackgroundColor(Color.CYAN)
+                9 -> mainBinding.btnShortCut9.setBackgroundColor(Color.CYAN)
+                10 -> mainBinding.btnShortCut10.setBackgroundColor(Color.CYAN)
             }
-            mainBinding.btnShortCut2.setOnClickListener {
-                quesNum = 2
-                checkOption(quesNum)
-                screenContent(quesNum)
-            }
-            mainBinding.btnShortCut3.setOnClickListener {
-                quesNum = 3
-                checkOption(quesNum)
-                screenContent(quesNum)
-            }
-            mainBinding.btnShortCut4.setOnClickListener {
-                quesNum = 4
-                checkOption(quesNum)
-                screenContent(quesNum)
-            }
-            mainBinding.btnShortCut5.setOnClickListener {
-                quesNum = 5
-                checkOption(quesNum)
-                screenContent(quesNum)
-            }
-            mainBinding.btnShortCut6.setOnClickListener {
-                quesNum = 6
-                checkOption(quesNum)
-                screenContent(quesNum)
-            }
-            mainBinding.btnShortCut7.setOnClickListener {
-                quesNum = 7
-                checkOption(quesNum)
-                screenContent(quesNum)
-            }
-            mainBinding.btnShortCut8.setOnClickListener {
-                quesNum = 8
-                checkOption(quesNum)
-                screenContent(quesNum)
-            }
-            mainBinding.btnShortCut9.setOnClickListener {
-                quesNum = 9
-                checkOption(quesNum)
-                screenContent(quesNum)
-            }
-            mainBinding.btnShortCut10.setOnClickListener {
-                quesNum = 10
-                checkOption(quesNum)
-                screenContent(quesNum)
-            }
+        }
+        mainBinding.btnShortCut1.setOnClickListener {
+            quesNum = 1
+            checkOption(quesNum)
+            screenContent(quesNum)
+        }
+        mainBinding.btnShortCut2.setOnClickListener {
+            quesNum = 2
+            checkOption(quesNum)
+            screenContent(quesNum)
+        }
+        mainBinding.btnShortCut3.setOnClickListener {
+            quesNum = 3
+            checkOption(quesNum)
+            screenContent(quesNum)
+        }
+        mainBinding.btnShortCut4.setOnClickListener {
+            quesNum = 4
+            checkOption(quesNum)
+            screenContent(quesNum)
+        }
+        mainBinding.btnShortCut5.setOnClickListener {
+            quesNum = 5
+            checkOption(quesNum)
+            screenContent(quesNum)
+        }
+        mainBinding.btnShortCut6.setOnClickListener {
+            quesNum = 6
+            checkOption(quesNum)
+            screenContent(quesNum)
+        }
+        mainBinding.btnShortCut7.setOnClickListener {
+            quesNum = 7
+            checkOption(quesNum)
+            screenContent(quesNum)
+        }
+        mainBinding.btnShortCut8.setOnClickListener {
+            quesNum = 8
+            checkOption(quesNum)
+            screenContent(quesNum)
+        }
+        mainBinding.btnShortCut9.setOnClickListener {
+            quesNum = 9
+            checkOption(quesNum)
+            screenContent(quesNum)
+        }
+        mainBinding.btnShortCut10.setOnClickListener {
+            quesNum = 10
+            checkOption(quesNum)
+            screenContent(quesNum)
+        }
+    }
+}
 
 
 
