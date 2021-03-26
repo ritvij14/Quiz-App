@@ -1,21 +1,22 @@
 package com.example.quizapp
 
-import android.content.Intent
 import android.os.Bundle
+import android.os.CountDownTimer
 import android.view.View
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.quizapp.databinding.ActivityPracticeBinding
+abstract class CountDownTimer
 
 fun onBackPressed() {
     Toast.makeText(Practice(), "Please use Next or Previous button.",
             Toast.LENGTH_LONG).show();
 }
-
+var quesNum = 1
 class Practice : AppCompatActivity() {
     private lateinit var mainBinding: ActivityPracticeBinding
-    var quesNum = 1
-    fun checkOption(num : Int)
+    fun checkOption(num: Int)
     {
         if (num == 6 || num == 8)
         {
@@ -32,12 +33,18 @@ class Practice : AppCompatActivity() {
         mainBinding = ActivityPracticeBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(mainBinding.root)
+        val timer: TextView = findViewById(R.id.clock)
+        object : CountDownTimer(3000000, 1000) {
+            override fun onTick(millisUntilFinished: Long) {
+                timer.setText("Time left: " + millisUntilFinished / 60000 + ":"+(millisUntilFinished/1000)%60)
+            }
 
-        mainBinding.tvQuestion.text = Constants.Question1
-        mainBinding.btnOptionA.text = Constants.Q1O1
-        mainBinding.btnOptionB.text = Constants.Q1O2
-        mainBinding.btnOptionC.text = Constants.Q1O3
-        mainBinding.btnOptionD.text = Constants.Q1O4
+            override fun onFinish() {
+                timer.setText("done!")
+            }
+        }.start()
+
+
 
         mainBinding.btnNext.setOnClickListener {
             quesNum += 1
@@ -128,9 +135,9 @@ class Practice : AppCompatActivity() {
         mainBinding.btnPrevious.setOnClickListener{
             if(quesNum>1) {
                 quesNum-= 1
-
+            }
             checkOption(quesNum)
-            when(quesNum) {
+            when(quesNum){
                 1 -> {
                     mainBinding.tvQuestionNumber.text = "Question 1"
                     mainBinding.tvQuestion.text = Constants.Question1
@@ -211,15 +218,7 @@ class Practice : AppCompatActivity() {
                     mainBinding.btnOptionC.text = Constants.Q10O3
                     mainBinding.btnOptionD.text = Constants.Q10O4
                 }
-
             }
-
-            }
-            else {
-            val intent = Intent(this, PracticeModeIntro::class.java)
-            startActivity(intent)
-        }
-
         }
     }
 }
