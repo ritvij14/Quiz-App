@@ -14,7 +14,16 @@
         android:layout_height="match_parent"
         tools:context=".Practice"
         android:orientation="vertical">
-
+        <TextView
+            android:id="@+id/clock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Timer  "
+            android:layout_marginEnd="10dp"
+            android:textAlignment="textEnd"
+            android:textSize="25sp"
+            android:layout_margin="8dp"
+            android:color="@color/black"/>
         <LinearLayout
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
@@ -127,16 +136,7 @@
             android:background="@color/orange"
             android:textAlignment="textStart"
             android:textColor="@color/black"/>
-        <TextView
-            android:id="@+id/clock"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Timer  "
-            android:layout_marginEnd="10dp"
-            android:textAlignment="textEnd"
-            android:textSize="25sp"
-            android:layout_margin="8dp"
-            android:color="@color/black"/>
+
         <TextView
             android:id="@+id/tvQuestion"
             android:layout_width="match_parent"
@@ -144,7 +144,7 @@
             android:layout_margin="8dp"
             android:text= "Display question"
             android:textColorHighlight="@color/orange"
-            android:textSize="25sp"
+            android:textSize="18sp"
             android:textAlignment="textStart"
             android:textColor="@color/black"/>
         <RadioGroup
@@ -162,8 +162,8 @@
             android:textColor="@color/black"
             android:textAlignment="textStart"
             android:textAllCaps="false"
-            android:background="@color/white"
-            android:textSize="25sp"/>
+            android:background="@color/cream3"
+            android:textSize="18sp"/>
         <RadioButton
             android:id="@+id/btnOptionB"
             android:layout_width="match_parent"
@@ -173,8 +173,8 @@
             android:textColor="@color/black"
             android:textAlignment="textStart"
             android:textAllCaps="false"
-            android:textSize="25sp"
-            android:background="@color/white"
+            android:textSize="18sp"
+            android:background="@color/cream3"
             />
         <RadioButton
             android:id="@+id/btnOptionC"
@@ -185,8 +185,8 @@
             android:textColor="@color/black"
             android:textAlignment="textStart"
             android:textAllCaps="false"
-            android:textSize="25sp"
-            android:background="@color/white"/>
+            android:textSize="18sp"
+            android:background="@color/cream3"/>
         <RadioButton
             android:id="@+id/btnOptionD"
             android:layout_width="match_parent"
@@ -196,8 +196,8 @@
             android:textColor="@color/black"
             android:textAlignment="textStart"
             android:textAllCaps="false"
-            android:textSize="25sp"
-            android:background="@color/white"/>
+            android:textSize="18sp"
+            android:background="@color/cream3"/>
         </RadioGroup>
         <LinearLayout
             android:layout_width="match_parent"
@@ -208,7 +208,7 @@
                 android:id="@+id/btnPrevious"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="15dp"
                 android:text="Prev"
                 android:textColor="@color/white"
                 android:backgroundTint="@color/orange"
@@ -224,7 +224,7 @@
                 android:layout_weight="1"
                 android:backgroundTint="@color/orange"
                 android:layout_marginStart="0dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="15dp"
                 android:textSize="25sp"/>
         </LinearLayout>
         <Button
@@ -235,8 +235,18 @@
             android:textColor="@color/white"
             android:layout_weight="1"
             android:backgroundTint="@color/orange"
-            android:layout_margin="10sp"
-
-            android:textSize="25sp"/>
+            android:textSize="25sp"
+            android:layout_marginHorizontal="10sp"/>
+        <Button
+            android:id="@+id/btnEndTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="End Test"
+            android:layout_marginTop="10sp"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:backgroundTint="@color/orange"
+            android:textSize="25sp"
+            android:layout_marginHorizontal="10sp"/>
     </LinearLayout>
 </ScrollView>
