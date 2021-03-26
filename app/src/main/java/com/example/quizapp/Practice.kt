@@ -65,7 +65,7 @@ class Practice : AppCompatActivity() {
         var ans = "None"
 
         fun screenContent(num: Int) {
-            mainBinding.btnNext.text =  "Save &amp; Next"
+            mainBinding.btnNext.text =  "Save & Next"
             when (num) {
                 1 -> {
                     mainBinding.tvQuestionNumber.text = "Question 1"
