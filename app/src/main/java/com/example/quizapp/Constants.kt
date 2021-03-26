@@ -61,11 +61,13 @@ object Constants {
     const val ans10 = "b"
 
     // Solution repository
-    const val Solution1 = " P(A ∩ B) = P(A – (A ∩ B))\n" +
+    const val Solution1 = "Solution:\n" +
+            " P(A ∩ B) = P(A – (A ∩ B))\n" +
             "= P(A) – P(A ∩ B)\n" +
             "= 0.6 – 0.2 Using P(A) = 1 – P(A)\n" +
             "= 0.4."
-    const val Solution2 = "Let A be the event of A solving the problem\n" +
+    const val Solution2 = "Solution:\n" +
+            "Let A be the event of A solving the problem\n" +
             "Let B be the event of B solving the problem\n" +
             "Let C be the event of C solving the problem\n" +
             "Given P(a) = 1⁄2, P(~B) = 1⁄4 and P(A ∪ B ∪ C) = 63/64\n" +
@@ -80,33 +82,41 @@ object Constants {
             "= 1 – p⁄8\n" +
             "⇒ P =1/8 = P(C)\n" +
             "⇒P(C) = 1 – P = 1 – 1⁄8 = 7⁄8."
-    const val Solution3 = "For independent events,\n" +
+    const val Solution3 = "Solution:\n" +
+            "For independent events,\n" +
             "P(A ∩ B) = P(A) P(B)\n" +
             "P(A ∪ B) = P(A) + P(B) – P(A ∩ B)\n" +
             "= P(A) + P(B) – P(A) P(B)\n" +
             "= 1⁄5 + P (1⁄5)P\n" +
             "⇒ 1⁄2 = 1⁄5 + 4⁄5P\n" +
             "⇒ P= 3⁄8."
-    const val Solution4 = "As A and B are mutually exclusive we have\n" +
+    const val Solution4 = "Solution:\n" +
+            "As A and B are mutually exclusive we have\n" +
             "A∩B¯\n" +
             "And Hence\n" +
             "P(A/B¯)=P(A∩B¯)P(B¯)\n" +
             "1−P(A¯)1−P(B¯)=1−561−13\n" +
             "P(A/B¯)=14"
-    const val Solution5 = "For independent events,\n" +
+    const val Solution5 = "Solution:\n" +
+            "For independent events,\n" +
             "P(A /~B) = P(a) = 0.2."
-    const val Solution6 = "P(A ∩ B) = 0 as (A ∩ B) = ∅\n" +
+    const val Solution6 = "Solution:\n" +
+            "P(A ∩ B) = 0 as (A ∩ B) = ∅\n" +
             "But P(A ∩ B) ≠ 0 , as P(a) > 0 and P(b) > 0\n" +
             "P(A ∩ B) = P(A) P(B), for independent events."
-    const val Solution7 = "Here, according to the given statement A ⊆ B\n" +
+    const val Solution7 = "Solution:\n" +
+            "Here, according to the given statement A ⊆ B\n" +
             "P(B) = P(A ∪ (A ∩ B)) (∵ A ∩ B = A)\n" +
             "= P(A) + P(A ∩ B)\n" +
             "Therefore, P(B) ≥ P(A)"
-    const val Solution8 = " P(a) = 0 (impossible event)\n" +
+    const val Solution8 = "Solution:\n" +
+            " P(a) = 0 (impossible event)\n" +
             "Hence, A is not dependent on any other event."
-    const val Solution9 = "A ⊂ B and B ⊂ A => A = B\n" +
+    const val Solution9 = "Solution:\n" +
+            "A ⊂ B and B ⊂ A => A = B\n" +
             "Hence P(a) = P(b)."
-    const val Solution10 = "A ⊂ B => B ⊂ A\n" +
+    const val Solution10 = "Solution:\n" +
+            "A ⊂ B => B ⊂ A\n" +
             "Therefore, P(A) ≥ P(B)"
 
 }
