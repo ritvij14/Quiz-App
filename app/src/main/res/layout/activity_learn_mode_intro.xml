@@ -72,7 +72,7 @@
         android:id="@+id/btnStartPractice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/start_practice"
+        android:text="@string/start_learning"
         android:layout_margin="20sp"
         android:textSize="20sp"
         android:textColor="@color/black"
