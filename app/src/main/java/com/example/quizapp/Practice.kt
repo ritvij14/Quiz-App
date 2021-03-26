@@ -92,13 +92,13 @@ class Practice : AppCompatActivity() {
                     }
                     else if (ans == "None") {
                         editor.apply {
-                            putInt("Q3optionSelected", 2)
+                            putInt("Q1optionSelected", 2)
                             apply()
                         }
                     }
                     else{
                         editor.apply {
-                            putInt("Q3optionSelected", 0)
+                            putInt("Q1optionSelected", 0)
                             apply()}
                     }
                     mainBinding.optnRadioGrp.clearCheck()
@@ -118,13 +118,13 @@ class Practice : AppCompatActivity() {
                     }
                     else if (ans == "None") {
                         editor.apply {
-                            putInt("Q3optionSelected", 2)
+                            putInt("Q2optionSelected", 2)
                             apply()
                         }
                     }
                     else{
                         editor.apply {
-                            putInt("Q3optionSelected", 0)
+                            putInt("Q2optionSelected", 0)
                             apply()}
                     }
                     mainBinding.optnRadioGrp.clearCheck()
@@ -170,13 +170,13 @@ class Practice : AppCompatActivity() {
                     }
                     else if (ans == "None") {
                         editor.apply {
-                            putInt("Q3optionSelected", 2)
+                            putInt("Q4optionSelected", 2)
                             apply()
                         }
                     }
                     else{
                         editor.apply {
-                            putInt("Q3optionSelected", 0)
+                            putInt("Q4optionSelected", 0)
                             apply()}
                     }
                     mainBinding.optnRadioGrp.clearCheck()
@@ -196,13 +196,13 @@ class Practice : AppCompatActivity() {
                     }
                     else if (ans == "None") {
                         editor.apply {
-                            putInt("Q3optionSelected", 2)
+                            putInt("Q5optionSelected", 2)
                             apply()
                         }
                     }
                     else{
                         editor.apply {
-                            putInt("Q3optionSelected", 0)
+                            putInt("Q5optionSelected", 0)
                             apply()}
                     }
                     mainBinding.optnRadioGrp.clearCheck()
@@ -222,13 +222,13 @@ class Practice : AppCompatActivity() {
                     }
                     else if (ans == "None") {
                         editor.apply {
-                            putInt("Q3optionSelected", 2)
+                            putInt("Q6optionSelected", 2)
                             apply()
                         }
                     }
                     else{
                         editor.apply {
-                            putInt("Q3optionSelected", 0)
+                            putInt("Q6optionSelected", 0)
                             apply()}
                     }
                     mainBinding.optnRadioGrp.clearCheck()
@@ -248,13 +248,13 @@ class Practice : AppCompatActivity() {
                     }
                     else if (ans == "None") {
                         editor.apply {
-                            putInt("Q3optionSelected", 2)
+                            putInt("Q7optionSelected", 2)
                             apply()
                         }
                     }
                     else{
                         editor.apply {
-                            putInt("Q3optionSelected", 0)
+                            putInt("Q7optionSelected", 0)
                             apply()}
                     }
                     mainBinding.optnRadioGrp.clearCheck()
@@ -274,13 +274,13 @@ class Practice : AppCompatActivity() {
                     }
                     else if (ans == "None") {
                         editor.apply {
-                            putInt("Q3optionSelected", 2)
+                            putInt("Q8optionSelected", 2)
                             apply()
                         }
                     }
                     else{
                         editor.apply {
-                            putInt("Q3optionSelected", 0)
+                            putInt("Q8optionSelected", 0)
                             apply()}
                     }
                     mainBinding.optnRadioGrp.clearCheck()
@@ -300,13 +300,13 @@ class Practice : AppCompatActivity() {
                     }
                     else if (ans == "None") {
                         editor.apply {
-                            putInt("Q3optionSelected", 2)
+                            putInt("Q9optionSelected", 2)
                             apply()
                         }
                     }
                     else{
                         editor.apply {
-                            putInt("Q3optionSelected", 0)
+                            putInt("Q9optionSelected", 0)
                             apply()}
                     }
                     mainBinding.optnRadioGrp.clearCheck()
@@ -321,17 +321,18 @@ class Practice : AppCompatActivity() {
                     }
                     else if (ans == "None") {
                         editor.apply {
-                            putInt("Q3optionSelected", 2)
+                            putInt("Q10optionSelected", 2)
                             apply()
                         }
                     }
                     else{
                         editor.apply {
-                            putInt("Q3optionSelected", 0)
+                            putInt("Q10optionSelected", 0)
                             apply()}
                     }
                     val intent = Intent(this, Result::class.java)
                     startActivity(intent)
+                    finish()
                 }
 
             }
