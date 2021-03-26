@@ -18,10 +18,7 @@ import java.util.prefs.Preferences
 
 abstract class CountDownTimer
 
-fun onBackPressed() {
-    Toast.makeText(Practice(), "Please use Next or Previous button.",
-            Toast.LENGTH_LONG).show();
-}
+
 var quesNum = 1
 class Practice : AppCompatActivity() {
     private lateinit var mainBinding: ActivityPracticeBinding
@@ -33,6 +30,12 @@ class Practice : AppCompatActivity() {
             mainBinding.btnOptionC.visibility = View.VISIBLE
             mainBinding.btnOptionD.visibility = View.VISIBLE
         }
+    }
+
+    override fun onBackPressed() {
+        Toast.makeText(this, "If you want to finish, press End test",
+            Toast.LENGTH_LONG).show();
+
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -87,11 +90,16 @@ class Practice : AppCompatActivity() {
                             apply()
                         }
                     }
-                    if (ans == "None") {
+                    else if (ans == "None") {
                         editor.apply {
-                            putInt("Q1optionSelected", 2)
+                            putInt("Q3optionSelected", 2)
                             apply()
                         }
+                    }
+                    else{
+                        editor.apply {
+                            putInt("Q3optionSelected", 0)
+                            apply()}
                     }
                     mainBinding.optnRadioGrp.clearCheck()
                 }
@@ -108,11 +116,16 @@ class Practice : AppCompatActivity() {
                             apply()
                         }
                     }
-                    if (ans == "None") {
+                    else if (ans == "None") {
                         editor.apply {
-                            putInt("Q2optionSelected", 2)
+                            putInt("Q3optionSelected", 2)
                             apply()
                         }
+                    }
+                    else{
+                        editor.apply {
+                            putInt("Q3optionSelected", 0)
+                            apply()}
                     }
                     mainBinding.optnRadioGrp.clearCheck()
                 }
@@ -129,11 +142,16 @@ class Practice : AppCompatActivity() {
                             apply()
                         }
                     }
-                    if (ans == "None") {
+                    else if (ans == "None") {
                         editor.apply {
                             putInt("Q3optionSelected", 2)
                             apply()
                         }
+                    }
+                    else{
+                        editor.apply {
+                            putInt("Q3optionSelected", 0)
+                            apply()}
                     }
                     mainBinding.optnRadioGrp.clearCheck()
                 }
@@ -150,11 +168,16 @@ class Practice : AppCompatActivity() {
                             apply()
                         }
                     }
-                    if (ans == "None") {
+                    else if (ans == "None") {
                         editor.apply {
-                            putInt("Q4optionSelected", 2)
+                            putInt("Q3optionSelected", 2)
                             apply()
                         }
+                    }
+                    else{
+                        editor.apply {
+                            putInt("Q3optionSelected", 0)
+                            apply()}
                     }
                     mainBinding.optnRadioGrp.clearCheck()
                 }
@@ -171,11 +194,16 @@ class Practice : AppCompatActivity() {
                             apply()
                         }
                     }
-                    if (ans == "None") {
+                    else if (ans == "None") {
                         editor.apply {
-                            putInt("Q5optionSelected", 2)
+                            putInt("Q3optionSelected", 2)
                             apply()
                         }
+                    }
+                    else{
+                        editor.apply {
+                            putInt("Q3optionSelected", 0)
+                            apply()}
                     }
                     mainBinding.optnRadioGrp.clearCheck()
                 }
@@ -192,11 +220,16 @@ class Practice : AppCompatActivity() {
                             apply()
                         }
                     }
-                    if (ans == "None") {
+                    else if (ans == "None") {
                         editor.apply {
-                            putInt("Q6optionSelected", 2)
+                            putInt("Q3optionSelected", 2)
                             apply()
                         }
+                    }
+                    else{
+                        editor.apply {
+                            putInt("Q3optionSelected", 0)
+                            apply()}
                     }
                     mainBinding.optnRadioGrp.clearCheck()
                 }
@@ -213,11 +246,16 @@ class Practice : AppCompatActivity() {
                             apply()
                         }
                     }
-                    if (ans == "None") {
+                    else if (ans == "None") {
                         editor.apply {
-                            putInt("Q7optionSelected", 2)
+                            putInt("Q3optionSelected", 2)
                             apply()
                         }
+                    }
+                    else{
+                        editor.apply {
+                            putInt("Q3optionSelected", 0)
+                            apply()}
                     }
                     mainBinding.optnRadioGrp.clearCheck()
                 }
@@ -234,11 +272,16 @@ class Practice : AppCompatActivity() {
                             apply()
                         }
                     }
-                    if (ans == "None") {
+                    else if (ans == "None") {
                         editor.apply {
-                            putInt("Q8optionSelected", 2)
+                            putInt("Q3optionSelected", 2)
                             apply()
                         }
+                    }
+                    else{
+                        editor.apply {
+                            putInt("Q3optionSelected", 0)
+                            apply()}
                     }
                     mainBinding.optnRadioGrp.clearCheck()
                 }
@@ -255,11 +298,16 @@ class Practice : AppCompatActivity() {
                             apply()
                         }
                     }
-                    if (ans == "None") {
+                    else if (ans == "None") {
                         editor.apply {
-                            putInt("Q9optionSelected", 2)
+                            putInt("Q3optionSelected", 2)
                             apply()
                         }
+                    }
+                    else{
+                        editor.apply {
+                            putInt("Q3optionSelected", 0)
+                            apply()}
                     }
                     mainBinding.optnRadioGrp.clearCheck()
                     mainBinding.btnNext.text = "Submit"
@@ -271,11 +319,16 @@ class Practice : AppCompatActivity() {
                             apply()
                         }
                     }
-                    if (ans == "None") {
+                    else if (ans == "None") {
                         editor.apply {
-                            putInt("Q10optionSelected", 2)
+                            putInt("Q3optionSelected", 2)
                             apply()
                         }
+                    }
+                    else{
+                        editor.apply {
+                            putInt("Q3optionSelected", 0)
+                            apply()}
                     }
                     val intent = Intent(this, Result::class.java)
                     startActivity(intent)
@@ -431,6 +484,12 @@ class Practice : AppCompatActivity() {
             quesNum = 10
             checkOption(quesNum)
             screenContent(quesNum)
+        }
+        mainBinding.btnEndTest.setOnClickListener {
+            val intent = Intent(applicationContext, Result::class.java)
+            startActivity(intent)
+            finish()
+
         }
     }
 }
