@@ -11,6 +11,7 @@ class Result : AppCompatActivity() {
     private lateinit var mainBinding: ActivityResultBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         val sharedPref = getSharedPreferences("myPref", MODE_PRIVATE)
+        var correctAnswers = 0
 
 
         mainBinding = ActivityResultBinding.inflate(layoutInflater)
@@ -25,7 +26,9 @@ class Result : AppCompatActivity() {
         fun colorDecider(num: Int): Int {
             when (num) {
                 0 -> return Color.RED
-                1 -> return Color.GREEN
+                1 -> {correctAnswers+=1
+                    return Color.GREEN
+                }
                 2 -> return Color.WHITE
                 else -> return Color.WHITE
             }
@@ -41,6 +44,7 @@ class Result : AppCompatActivity() {
         mainBinding.tvQuestion8.setBackgroundColor(colorDecider(sharedPref.getInt("Q8optionSelected", 0)))
         mainBinding.tvQuestion9.setBackgroundColor(colorDecider(sharedPref.getInt("Q9optionSelected", 0)))
         mainBinding.tvQuestion10.setBackgroundColor(colorDecider(sharedPref.getInt("Q10optionSelected", 0)))
+        mainBinding.tvTotalCorrect.text = "Total Correct = $correctAnswers"
 
     }
 }

@@ -9,17 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.QuizApp">
+
         <activity
             android:name=".Result"
             android:label="@string/title_activity_result"
-            android:theme="@style/Theme.QuizApp.NoActionBar"></activity>
+            android:theme="@style/Theme.QuizApp.NoActionBar" />
         <activity
             android:name=".Practice"
             android:label="@string/title_activity_practice"
             android:theme="@style/Theme.QuizApp.NoActionBar" />
         <activity android:name=".PracticeModeIntro" />
-        <activity android:name=".LearnModeIntro"/>
-
+        <activity android:name=".LearnModeIntro" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,8 +27,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LearnMode">
-        </activity>
+        <activity android:name=".LearnMode"></activity>
     </application>
 
 </manifest>
