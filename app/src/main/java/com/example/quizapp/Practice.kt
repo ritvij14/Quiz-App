@@ -40,7 +40,7 @@ class Practice : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(mainBinding.root)
         val timer: TextView = findViewById(R.id.clock)
-        object : CountDownTimer(3000000, 1000) {
+        object : CountDownTimer(1200000, 1000) {
             val f: NumberFormat = DecimalFormat("00")
             override fun onTick(millisUntilFinished: Long) {
                 timer.setText("Time left: " + millisUntilFinished / 60000 + ":" + f.format((millisUntilFinished / 1000) % 60))
