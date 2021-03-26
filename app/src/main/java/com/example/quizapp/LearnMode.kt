@@ -13,7 +13,10 @@ class LearnMode : AppCompatActivity() {
         secondBinding = ActivitySecondBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(secondBinding.root)
+
         secondBinding.ques.text = Constants.Question1
+        secondBinding.quesnumber.text = "Question 1"
+
         var ques =1
 
         secondBinding.nxtbtn.setOnClickListener {
@@ -24,43 +27,53 @@ class LearnMode : AppCompatActivity() {
                     1 -> {
                         secondBinding.ques.text = Constants.Question1
                         secondBinding.sol.visibility = View.INVISIBLE
+                        secondBinding.quesnumber.text = "Question 1"
                     }
                     2 -> {
                         secondBinding.ques.text = Constants.Question2
                         secondBinding.sol.visibility = View.INVISIBLE
+                        secondBinding.quesnumber.text = "Question 2"
                     }
                     3 -> {
                         secondBinding.ques.text = Constants.Question3
                         secondBinding.sol.visibility = View.INVISIBLE
+                        secondBinding.quesnumber.text = "Question 3"
                     }
                     4 -> {
                         secondBinding.ques.text = Constants.Question4
                         secondBinding.sol.visibility = View.INVISIBLE
+                        secondBinding.quesnumber.text = "Question 4"
                     }
                     5 -> {
                         secondBinding.ques.text = Constants.Question5
                         secondBinding.sol.visibility = View.INVISIBLE
+                        secondBinding.quesnumber.text = "Question 5"
                     }
                     6 -> {
                         secondBinding.ques.text = Constants.Question6
                         secondBinding.sol.visibility = View.INVISIBLE
+                        secondBinding.quesnumber.text = "Question 6"
                     }
                     7 -> {
                         secondBinding.ques.text = Constants.Question7
                         secondBinding.sol.visibility = View.INVISIBLE
+                        secondBinding.quesnumber.text = "Question 7"
                     }
                     8 -> {
                         secondBinding.ques.text = Constants.Question8
                         secondBinding.sol.visibility = View.INVISIBLE
+                        secondBinding.quesnumber.text = "Question 8"
                     }
                     9 -> {
                         secondBinding.ques.text = Constants.Question9
                         secondBinding.sol.visibility = View.INVISIBLE
+                        secondBinding.quesnumber.text = "Question 9"
                     }
                     10 -> {
                         secondBinding.ques.text = Constants.Question10
                         secondBinding.nxtbtn.text = "Finish"
                         secondBinding.sol.visibility = View.INVISIBLE
+                        secondBinding.quesnumber.text = "Question 10"
 
                     }
                     else ->{
@@ -79,44 +92,54 @@ class LearnMode : AppCompatActivity() {
                     1 -> {
                         secondBinding.ques.text = Constants.Question1
                         secondBinding.sol.visibility = View.INVISIBLE
+                        secondBinding.quesnumber.text = "Question 1"
                     }
                     2 -> {
                         secondBinding.ques.text = Constants.Question2
                         secondBinding.sol.visibility = View.INVISIBLE
+                        secondBinding.quesnumber.text = "Question 2"
 
                     }
                     3 -> {
                         secondBinding.ques.text = Constants.Question3
                         secondBinding.sol.visibility = View.INVISIBLE
+                        secondBinding.quesnumber.text = "Question 3"
                     }
                     4 -> {
                         secondBinding.ques.text = Constants.Question4
                         secondBinding.sol.visibility = View.INVISIBLE
+                        secondBinding.quesnumber.text = "Question 4"
                     }
                     5 -> {
                         secondBinding.ques.text = Constants.Question5
                         secondBinding.sol.visibility = View.INVISIBLE
+                        secondBinding.quesnumber.text = "Question 5"
                     }
                     6 -> {
                         secondBinding.ques.text = Constants.Question6
                         secondBinding.sol.visibility = View.INVISIBLE
+                        secondBinding.quesnumber.text = "Question6"
                     }
                     7 -> {
                         secondBinding.ques.text = Constants.Question7
                         secondBinding.sol.visibility = View.INVISIBLE
+                        secondBinding.quesnumber.text = "Question 7"
                     }
                     8 -> {
                         secondBinding.ques.text = Constants.Question8
                         secondBinding.sol.visibility = View.INVISIBLE
+                        secondBinding.quesnumber.text = "Question 8"
                     }
                     9 -> {
                         secondBinding.ques.text = Constants.Question9
                         secondBinding.nxtbtn.text = "NEXT"
                         secondBinding.sol.visibility = View.INVISIBLE
+                        secondBinding.quesnumber.text = "Question 9"
                     }
                     10 -> {
                         secondBinding.ques.text = Constants.Question10
                         secondBinding.sol.visibility = View.INVISIBLE
+                        secondBinding.quesnumber.text = "Question 10"
                     }
 
 
