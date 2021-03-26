@@ -1,4 +1,4 @@
-package com.example.quizapp
+ package com.example.quizapp
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -15,6 +15,10 @@ class MainActivity : AppCompatActivity() {
 
         mainBinding.btnPractice.setOnClickListener{
             val intent = Intent(this ,PracticeModeIntro::class.java)
+            startActivity(intent)
+        }
+        mainBinding.btnLearn.setOnClickListener{
+            val intent = Intent(this ,LearnMode::class.java)
             startActivity(intent)
         }
 

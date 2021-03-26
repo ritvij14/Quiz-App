@@ -15,16 +15,118 @@
         tools:context=".Practice"
         android:orientation="vertical">
 
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/cream1">
+            <Button
+                android:id="@+id/btnShortCut1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:layout_margin="1dp"/>
+            <Button
+                android:id="@+id/btnShortCut2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:textColor="@color/black"
+                android:background="@color/white"/>
+            <Button
+                android:id="@+id/btnShortCut3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:textColor="@color/black"
+                android:background="@color/white"/>
+            <Button
+                android:id="@+id/btnShortCut4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:textColor="@color/black"
+                android:background="@color/white"/>
+            <Button
+                android:id="@+id/btnShortCut5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:textColor="@color/black"
+                android:background="@color/white"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/cream1">
+            <Button
+                android:id="@+id/btnShortCut6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:layout_margin="1dp"
+                android:background="@color/white"/>
+            <Button
+                android:id="@+id/btnShortCut7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:textColor="@color/black"
+                android:background="@color/white"/>
+            <Button
+                android:id="@+id/btnShortCut8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:textColor="@color/black"
+                android:background="@color/white"/>
+            <Button
+                android:id="@+id/btnShortCut9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:textColor="@color/black"
+                android:background="@color/white"/>
+            <Button
+                android:id="@+id/btnShortCut10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:textColor="@color/black"
+                android:background="@color/white"/>
+        </LinearLayout>
         <TextView
             android:id="@+id/tvQuestionNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Question 1"
-            android:textSize="35sp"
             android:layout_margin="8dp"
-            android:gravity="center"
-            android:textColor="@color/white"
-            android:background="@color/orange"/>
+            android:text= "Display question number"
+            android:textSize="25sp"
+            android:background="@color/orange"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"/>
         <TextView
             android:id="@+id/clock"
             android:layout_width="match_parent"
@@ -40,50 +142,63 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text= "1. A and B are two events such that P(A) = 0.4 and P(A ∩ B) = 0.2 Then P(A ∩ B) is equal to ___________"
+            android:text= "Display question"
+            android:textColorHighlight="@color/orange"
             android:textSize="25sp"
             android:textAlignment="textStart"
             android:textColor="@color/black"/>
-        <Button
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/optnRadioGrp">
+
+
+        <RadioButton
             android:id="@+id/btnOptionA"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="a) 0.4"
+            android:text="Display optn A"
             android:textColor="@color/black"
             android:textAlignment="textStart"
             android:textAllCaps="false"
+            android:background="@color/white"
             android:textSize="25sp"/>
-        <Button
+        <RadioButton
             android:id="@+id/btnOptionB"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="b) 0.2"
+            android:text="Display optn B"
             android:textColor="@color/black"
             android:textAlignment="textStart"
             android:textAllCaps="false"
-            android:textSize="25sp"/>
-        <Button
+            android:textSize="25sp"
+            android:background="@color/white"
+            />
+        <RadioButton
             android:id="@+id/btnOptionC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="c) 0.6"
+            android:text="Display optn C"
             android:textColor="@color/black"
             android:textAlignment="textStart"
             android:textAllCaps="false"
-            android:textSize="25sp"/>
-        <Button
+            android:textSize="25sp"
+            android:background="@color/white"/>
+        <RadioButton
             android:id="@+id/btnOptionD"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="d) 0.8"
+            android:text="Display optn D"
             android:textColor="@color/black"
             android:textAlignment="textStart"
             android:textAllCaps="false"
-            android:textSize="25sp"/>
+            android:textSize="25sp"
+            android:background="@color/white"/>
+        </RadioGroup>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -112,5 +227,16 @@
                 android:layout_marginTop="30dp"
                 android:textSize="25sp"/>
         </LinearLayout>
+        <Button
+            android:id="@+id/btnMarkForReview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mark for review"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:backgroundTint="@color/orange"
+            android:layout_margin="10sp"
+
+            android:textSize="25sp"/>
     </LinearLayout>
 </ScrollView>
