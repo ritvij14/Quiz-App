@@ -5,16 +5,22 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.graphics.Color
 import android.os.Bundle
+import android.os.CountDownTimer
 import android.view.View
+import android.widget.TextView
 import android.preference.Preference
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.quizapp.databinding.ActivityPracticeBinding
 import java.util.prefs.Preferences
 
+abstract class CountDownTimer
 
-
-
+fun onBackPressed() {
+    Toast.makeText(Practice(), "Please use Next or Previous button.",
+            Toast.LENGTH_LONG).show();
+}
+var quesNum = 1
 class Practice : AppCompatActivity() {
     private lateinit var mainBinding: ActivityPracticeBinding
     fun checkOption(num: Int) {
@@ -26,14 +32,22 @@ class Practice : AppCompatActivity() {
             mainBinding.btnOptionD.visibility = View.VISIBLE
         }
     }
-
-
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         mainBinding = ActivityPracticeBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(mainBinding.root)
+        val timer: TextView = findViewById(R.id.clock)
+        object : CountDownTimer(3000000, 1000) {
+            override fun onTick(millisUntilFinished: Long) {
+                timer.setText("Time left: " + millisUntilFinished / 60000 + ":"+(millisUntilFinished/1000)%60)
+            }
+
+            override fun onFinish() {
+                timer.setText("done!")
+            }
+        }.start()
+
+
         val sharedPref = getSharedPreferences("myPref", Context.MODE_PRIVATE)
         val editor = sharedPref.edit()
         var quesNum = 1
@@ -220,7 +234,6 @@ class Practice : AppCompatActivity() {
                     }
                     mainBinding.optnRadioGrp.clearCheck()
                 }
-
                 10 -> {
                     mainBinding.tvQuestionNumber.text = "Question 10"
                     mainBinding.tvQuestion.text = Constants.Question10
@@ -411,8 +424,7 @@ class Practice : AppCompatActivity() {
                 screenContent(quesNum)
             }
 
-                }
-            }
+
 
 
 

@@ -17,8 +17,8 @@
     <string name="diff_level">Difficulty level</string>
     <string name="med">:Medium</string>
     <string name="ideal_durn">Ideal Duration</string>
-    <string name="fif">:50 mins</string>
-    <string name="hun">:100 mins</string>
+    <string name="fif">50 mins</string>
+    <string name="hun">50 mins</string>
     <string name="start_practice">Start Practice</string>
     <string name="start_learning">Start Learning</string>
     <string name="hello_first_fragment">Hello first fragment</string>
@@ -26,5 +26,6 @@
     <string name="title_activity_eigth_question">EigthQuestion</string>
     <string name="title_activity_practice_mode_questions">PracticeModeQuestions</string>
     <string name="title_activity_practice">Practice</string>
-    <string name="title_activity_result">Result</string>
+    <string name="display_time">Time left: </string>
+    <string name="colon">:</string>
 </resources>
