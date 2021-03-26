@@ -14,7 +14,16 @@
         android:layout_height="match_parent"
         tools:context=".Practice"
         android:orientation="vertical">
-
+        <TextView
+            android:id="@+id/clock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Timer  "
+            android:layout_marginEnd="10dp"
+            android:textAlignment="textEnd"
+            android:textSize="25sp"
+            android:layout_margin="8dp"
+            android:color="@color/black"/>
         <LinearLayout
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
@@ -127,16 +136,7 @@
             android:background="@color/orange"
             android:textAlignment="textStart"
             android:textColor="@color/black"/>
-        <TextView
-            android:id="@+id/clock"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Timer  "
-            android:layout_marginEnd="10dp"
-            android:textAlignment="textEnd"
-            android:textSize="25sp"
-            android:layout_margin="8dp"
-            android:color="@color/black"/>
+
         <TextView
             android:id="@+id/tvQuestion"
             android:layout_width="match_parent"
@@ -162,7 +162,7 @@
             android:textColor="@color/black"
             android:textAlignment="textStart"
             android:textAllCaps="false"
-            android:background="@color/white"
+            android:background="@color/cream3"
             android:textSize="25sp"/>
         <RadioButton
             android:id="@+id/btnOptionB"
@@ -174,7 +174,7 @@
             android:textAlignment="textStart"
             android:textAllCaps="false"
             android:textSize="25sp"
-            android:background="@color/white"
+            android:background="@color/cream3"
             />
         <RadioButton
             android:id="@+id/btnOptionC"
@@ -186,7 +186,7 @@
             android:textAlignment="textStart"
             android:textAllCaps="false"
             android:textSize="25sp"
-            android:background="@color/white"/>
+            android:background="@color/cream3"/>
         <RadioButton
             android:id="@+id/btnOptionD"
             android:layout_width="match_parent"
@@ -197,7 +197,7 @@
             android:textAlignment="textStart"
             android:textAllCaps="false"
             android:textSize="25sp"
-            android:background="@color/white"/>
+            android:background="@color/cream3"/>
         </RadioGroup>
         <LinearLayout
             android:layout_width="match_parent"

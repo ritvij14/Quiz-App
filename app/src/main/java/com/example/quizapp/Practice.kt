@@ -47,8 +47,10 @@ class Practice : AppCompatActivity() {
             }
 
             override fun onFinish() {
-                timer.setText("done!")
-
+                val intent = Intent(applicationContext, Result::class.java)
+                startActivity(intent)
+                Toast.makeText(Practice(), "Times Up!!",
+                    Toast.LENGTH_LONG).show();
 
             }
         }.start()
